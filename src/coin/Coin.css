@@ -1,7 +1,46 @@
 .Coin {
 	height: 120px;
-	margin: 20px;
+	width: 120px;
+    margin: 20px auto;
+    
 }
 .Coin-img {
 	height: 120px;
+}
+
+.Coin-flip {
+	animation-name: example;
+	animation-duration: 2s;
+	position: relative;
+}
+@keyframes example {
+	0% {
+		left: 0px;
+		top: -2000px;
+		transform: rotateY(0deg);
+	}
+	5% {
+		left: 0px;
+		top: -110px;
+		transform: rotateY(80deg);
+	}
+	25% {
+		left: 0px;
+		top: -20px;
+		transform: rotateY(0deg);
+	}
+	50% {
+		left: 0px;
+		top: 0px;
+		transform: rotateY(40deg);
+	}
+	75% {
+		left: 0px;
+        top: -20px;
+        transform: rotateY(0deg);
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
 }

@@ -12,11 +12,18 @@ export default class Coin extends Component {
 		) ? (
 			<h1>Нажми на кнопку</h1>
 		) : (
-			<img
-				src={this.props.side === "heads" ? side1 : side2}
-				className="Coin-img"
-				alt={this.props.side}
-			/>
+			<div
+				className={
+					this.props.isFlipping === true &&
+					"Coin-flip"
+				}
+			>
+				<img
+					src={this.props.side === "heads" ? side1 : side2}
+					className="Coin-img "
+					alt={this.props.side}
+				/>
+			</div>
 		);
 
 		return <div className="Coin">{msg}</div>;
